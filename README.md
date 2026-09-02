@@ -103,7 +103,7 @@ Mini_Soc/
 ### Step 1: Create a Test Log File (Controlled Testing)
 
 In a separate terminal or within the root directory, create an empty `auth.log`
-file to simulate system log streaming (this `auth.log` must be in the same directory as the script):
+file to simulate system log streaming (`auth.log` file must be in the same directory as the script):
 
 ```bash
 touch auth.log
@@ -157,25 +157,6 @@ Upon triggering the attack simulation, an automated notification arrives instant
 ![telegram_alert.png](images/telegram_alert.png)
 
 <br>
-
-#### Log Stream vs. Detection Flow
-
-```text
-[auth.log Ingestion] 
-         │
-         ▼
-[Regex Threat Engine] ──(Match: "Failed password")──> [Incident Builder]
-         │                                                    │
-         ▼ (No match)                                         ▼
-   (Ignore / Pass)                                    [Telegram Webhook (TLS)]
-                                                              │
-                                                              ▼
-                                                   [SOC Operator Notification]
-```
-
-- **Protocol**: HTTPS (TLSv1.3) via Telegram API (`api.telegram.org`).
-- **Data Confidentiality**: Sensitive bot credentials stay localized in `.env`, while alert
-- payloads are encrypted in transit across public networks.
 
 ---
 
