@@ -62,7 +62,7 @@ python3 -m venv .venv
 # On macOS / Linux:
 source .venv/bin/activate
 # On Windows (PowerShell):
-# .venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
 ```
 
 ### 2. Install Dependencies
@@ -70,13 +70,12 @@ source .venv/bin/activate
 Install the required packages using the project's dependency definition:
 
 ```bash
-pip install requests python-dotenv
-pip freeze > requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 3. Configure Environment Variables
 
-Create a `.env` file in the root directory (never commit this file to GitHub):
+Create a `.env` file in the root directory (PRIVATE user data):
 
 ```env
 TELEGRAM_BOT_TOKEN="your_bot_token_here"
@@ -94,13 +93,8 @@ Mini_Soc/
 ├── src/
 │   └── mini_soc.py
 ├── .env
-├── .gitignore
-├── requirements.txt
-└── README.md
+└── requirements.txt
 ```
-
-> **PyCharm Tip**: If you are using PyCharm, right-click on the `src/` folder and select
-> **Mark Directory as -> Sources Root** to ensure seamless module resolution.
 
 ---
 
@@ -109,7 +103,7 @@ Mini_Soc/
 ### Step 1: Create a Test Log File (Controlled Testing)
 
 In a separate terminal or within the root directory, create an empty `auth.log`
-file to simulate system log streaming:
+file to simulate system log streaming (this `auth.log` must be in the same directory as the script):
 
 ```bash
 touch auth.log
@@ -120,7 +114,7 @@ touch auth.log
 With your `.venv` activated, launch the monitoring script:
 
 ```bash
-python src/mini_soc.py
+python mini_soc.py
 ```
 
 The script will validate your environment variables, initialize regex rule definitions,
