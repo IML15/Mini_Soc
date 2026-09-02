@@ -35,13 +35,13 @@ channel or chat.
 ## 🚀 Features
 
 - **Real-Time Log Tail & Ingestion**: Continuously tails local authentication logs without reloading
-- files from scratch.
+files from scratch.
 - **Pattern-Based Threat Detection**: Evaluates events using compiled regex rules
-- (`failed password`, `invalid user`, `authentication failure`).
+(`failed password`, `invalid user`, `authentication failure`).
 - **Encrypted Alerting Channel**: Dispatches instant telemetry alerts over HTTPS
-- via the official Telegram Bot API using `requests`.
+via the official Telegram Bot API using `requests`.
 - **Environment Isolation & Security**: Employs `python-dotenv` to safeguard
-- bot tokens, chat IDs, and operational file paths outside the version control system.
+bot tokens, chat IDs, and operational file paths outside the version control system.
 
 ---
 
