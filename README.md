@@ -97,7 +97,9 @@ Mini_Soc/
 ├── src/
 │   └── mini_soc.py
 ├── .env
-└── requirements.txt
+├── .gitignore
+├── requirements.txt
+└── README.md
 ```
 
 ---
