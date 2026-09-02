@@ -87,7 +87,7 @@ You can create your own bot using @BotFather, for example. Once you have created
 have its token, send it a `/start` message to initialize it, and then send it a trivial test message.
 Now go to `https://api.telegram.org/bot<Your token>/getUpdates` and there you will get your ID.
 
-![id.png](./images/id.png)
+<img src="images/id.png" alt="Telegram getUpdates ID" width="550"/>
 
 ### 4. Project Structure
 
