@@ -83,6 +83,10 @@ TELEGRAM_CHAT_ID="your_telegram_chat_id_here"
 LOG_FILE_PATH="auth.log"
 ```
 
+You can create your own bot using @BotFather, for example. Once you have created the bot and 
+have its token, send it a `/start` message to initialize it, and then send it a trivial test message.
+Now go to `https://api.telegram.org/<Your token>/getUpdates` and there you will get your IDs.
+
 ### 4. Project Structure
 
 Ensure your directory matches the following structure:
