@@ -146,12 +146,13 @@ When a malicious pattern is matched, the engine triggers an HTTP POST request to
 The verification workflow includes:
 
 - **Signature Matching**: The regex rule successfully flags patterns like `failed password` and
-- `invalid user`.
+`invalid user`.
 - **Alert Dispatch**: The incident details (timestamp, source IP, affected user, raw payload) are
-- transmitted over TLS directly to your Telegram chat.
+transmitted over TLS directly to your Telegram chat.
 - **Console Feedback**: Real-time feedback is printed to the terminal confirming the alert
-- dispatch status (HTTP 200).
+dispatch status (HTTP 200).
 
+<br>
 
 ### Verification (Telegram Incident Alert)
 
