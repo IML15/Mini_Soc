@@ -90,7 +90,7 @@ Now go to `https://api.telegram.org/bot<Your token>/getUpdates` and there you wi
 <br>
 
 <p align="center">
-  <img src="images/id.png" alt="Telegram getUpdates ID" width="400" />
+  <img src="images/id.png" alt="Telegram getUpdates ID" width="350" />
 </p>
 
 <br>
