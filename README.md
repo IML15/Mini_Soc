@@ -85,7 +85,7 @@ LOG_FILE_PATH="auth.log"
 
 You can create your own bot using @BotFather, for example. Once you have created the bot and 
 have its token, send it a `/start` message to initialize it, and then send it a trivial test message.
-Now go to `https://api.telegram.org/<Your token>/getUpdates` and there you will get your IDs.
+Now go to `https://api.telegram.org/<Your token>/getUpdates` and there you will get your ID.
 
 ### 4. Project Structure
 
@@ -152,7 +152,6 @@ The verification workflow includes:
 - **Console Feedback**: Real-time feedback is printed to the terminal confirming the alert
 - dispatch status (HTTP 200).
 
-<br>
 
 ### Verification (Telegram Incident Alert)
 
