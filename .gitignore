@@ -11,4 +11,7 @@ venv/
 
 # PyCharm
 .idea/
+
+# Files
 .env
+auth.log
