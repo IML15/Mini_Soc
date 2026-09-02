@@ -168,7 +168,11 @@ dispatch status (HTTP 200).
 
 Upon triggering the attack simulation, an automated notification arrives instantly:
 
-![telegram_alert.png](images/telegram_alert.png)
+<br>
+
+<p align="center">
+  <img src="images/alert.png" alt="Telegram alert" width="350" />
+</p>
 
 <br>
 
