@@ -116,8 +116,8 @@ Mini_Soc/
 
 ### Step 1: Create a Test Log File (Controlled Testing)
 
-In a separate terminal or within the root directory, create an empty `auth.log`
-file to simulate system log streaming (`auth.log` file must be in the same directory as the script):
+In the repository root, create an empty `auth.log` file to simulate system log streaming
+(a relative `LOG_FILE_PATH` is resolved from the directory you run the script from, i.e. the repository root):
 
 ```bash
 touch auth.log
@@ -125,10 +125,10 @@ touch auth.log
 
 ### Step 2: Run the Mini-SOC Engine
 
-With your `.venv` activated, launch the monitoring script:
+With your `.venv` activated, launch the monitoring script from the repository root:
 
 ```bash
-python mini_soc.py
+python src/mini_soc.py
 ```
 
 The script will validate your environment variables, initialize regex rule definitions,
