@@ -4,6 +4,7 @@ import requests
 import re
 from datetime import datetime
 from dotenv import load_dotenv
+from firma_iml15 import mostrar_firma
 
 # Load the credentials from the file .env
 load_dotenv()
@@ -72,4 +73,5 @@ def monitor_logs():
                 send_telegram_alert(line)
 
 if __name__ == "__main__":
+    mostrar_firma()
     monitor_logs()
