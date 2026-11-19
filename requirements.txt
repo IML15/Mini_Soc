@@ -4,4 +4,4 @@ idna==3.19
 python-dotenv==1.2.3
 requests==2.34.2
 urllib3==2.7.0
-signature-iml15 @ git+https://github.com/IML15/signature-iml15.git
+signature-iml15 @ https://github.com/IML15/signature-iml15/archive/refs/heads/main.zip
